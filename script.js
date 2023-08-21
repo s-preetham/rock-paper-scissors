@@ -13,8 +13,8 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
 
-    console.log(playerSelection);
-    console.log(computerSelection);
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
 
     if (playerSelection === "rock") {
         if (computerSelection === "rock") {
