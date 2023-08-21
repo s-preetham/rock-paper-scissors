@@ -11,12 +11,16 @@ function getComputerChoice() {
     }
 }
 
-function playRound(playerSelection, getComputerChoice) {
+function playRound(playerSelection, computerSelection) {
+
+    console.log(playerSelection);
+    console.log(computerSelection);
+
     if (playerSelection === "rock") {
-        if (getComputerChoice === "rock") {
+        if (computerSelection === "rock") {
             return "It's a draw!";
         }
-        else if (getComputerChoice === "paper") {
+        else if (computerSelection === "paper") {
             return "You lose!";
         }
         else {
@@ -24,10 +28,10 @@ function playRound(playerSelection, getComputerChoice) {
         }
     }
     if (playerSelection === "paper") {
-        if (getComputerChoice === "rock") {
+        if (computerSelection === "rock") {
             return "You win!";
         }
-        else if (getComputerChoice === "paper") {
+        else if (computerSelection === "paper") {
             return "It's a draw!";
         }
         else {
@@ -35,10 +39,10 @@ function playRound(playerSelection, getComputerChoice) {
         }
     }
     if (playerSelection === "scissor") {
-        if (getComputerChoice === "rock") {
+        if (computerSelection === "rock") {
             return "You lose!";
         }
-        else if (getComputerChoice === "paper") {
+        else if (computerSelection === "paper") {
             return "You win!";
         }
         else {
@@ -51,6 +55,8 @@ function game() {
     for(let i=0;i<5;i++) {
         const playerSelection = window.prompt("Enter your choice: ");
         const computerSelection = getComputerChoice();
+        console.log(playerSelection);
+        console.log(computerSelection);
         console.log(playRound(playerSelection, computerSelection));
     }
 }
