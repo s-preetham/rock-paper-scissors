@@ -55,8 +55,8 @@ function game() {
     for(let i=0;i<5;i++) {
         const playerSelection = window.prompt("Enter your choice: ");
         const computerSelection = getComputerChoice();
-        console.log(playerSelection);
-        console.log(computerSelection);
+        console.log("Your Selection:", playerSelection);
+        console.log("Computer's Selection:", computerSelection);
         console.log(playRound(playerSelection, computerSelection));
     }
 }
