@@ -24,7 +24,7 @@ function playRound(playerSelection) {
     computerSelection = computerSelection.toLowerCase();
     console.log(playerSelection,computerSelection)
 
-    if (winDiv.innerHTML!=="") {
+    if (winDiv.innerHTML!="") {
         winDiv.innerHTML = "";
     }
     
