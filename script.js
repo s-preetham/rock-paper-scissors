@@ -24,6 +24,9 @@ function playRound(playerSelection) {
     computerSelection = computerSelection.toLowerCase();
     console.log(playerSelection,computerSelection)
 
+    if (winDiv.innerHTML!=="") {
+        winDiv.innerHTML = "";
+    }
     
     if (playerSelection === "rock") {
         if (computerSelection === "rock") {
@@ -61,26 +64,33 @@ function playRound(playerSelection) {
             CompScore += 1;
         }
     }
-    console.log("user score:",userScore)
-    console.log("Computer score:",CompScore)
+    playDiv.innerHTML = userScore;
+    CompDiv.innerHTML = CompScore;
     if (userScore===5||CompScore===5) {
         if (userScore===5 && CompScore===5) {
-            console.log("Draw!")
+            winDiv.innerHTML = "Draw!"
         }
         else if (CompScore===5) {
-            console.log("Computer Wins!")
+            window.innerHTML = "Computer Wins!";
         }
         else if (userScore===5){
-            console.log("User Wins!")
+            winDiv.innerHTML = "User Wins!";
         }
         userScore = 0;
         CompScore = 0;
+        
     }
+    
+    
 }
-
+const playDiv = document.getElementById("player-score");
+const CompDiv = document.getElementById("comp-score");
+const winDiv = document.getElementById("win-element");
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorBtn = document.getElementById("scissor");
+
+
 
 rVal = rockBtn.id;
 pVal = paperBtn.id;
