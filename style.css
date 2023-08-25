@@ -1,0 +1,27 @@
+
+
+
+
+#rock {
+    background-image: url('images/rock.jpeg');
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+#paper {
+    background-image: url('images/paper.jpeg');
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#scissor {
+    background-image: url('images/scissor.jpeg');
+    width: 300px;
+    height: 200px;
+    object-fit:cover;
+}
+    
