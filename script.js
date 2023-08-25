@@ -71,10 +71,13 @@ function playRound(playerSelection) {
             winDiv.innerHTML = "Draw!"
         }
         else if (CompScore===5) {
-            window.innerHTML = "Computer Wins!";
+            winDiv.innerHTML = "Computer Wins!";
         }
         else if (userScore===5){
             winDiv.innerHTML = "User Wins!";
+        }
+        else {
+            winDiv.innerHTML = "";
         }
         userScore = 0;
         CompScore = 0;
@@ -96,9 +99,9 @@ rVal = rockBtn.id;
 pVal = paperBtn.id;
 sVal = scissorBtn.id;
 
-rockBtn.addEventListener("click", (event) => console.log(playRound(rVal)));
-paperBtn.addEventListener("click", (event) => console.log(playRound(pVal)));
-scissorBtn.addEventListener("click", (event) => console.log(playRound(sVal)));
+rockBtn.addEventListener("click", (event) => playRound(rVal));
+paperBtn.addEventListener("click", (event) => playRound(pVal));
+scissorBtn.addEventListener("click", (event) => playRound(sVal));
 
 
 
