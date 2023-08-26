@@ -1,4 +1,10 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@font-face {
+    font-family: source;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+}
 #rock {
     background-image: url('images/rock-anm.gif');
     width: 100px;
@@ -10,6 +16,7 @@
     box-shadow: 0 9px #999;
     cursor:pointer;
 }
+
 #rock:active {
     background-color: #ffffff;
     box-shadow: 0 5px #666;

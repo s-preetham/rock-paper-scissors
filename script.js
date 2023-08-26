@@ -34,33 +34,41 @@ function playRound(playerSelection) {
         }
         else if (computerSelection === "paper") {
             CompScore += 1;
+            img.src = "images/paper-anm.gif";
         }
         else {
             userScore += 1;
+            img.src = "images/scissor-anm.gif";
         }
     }
     if (playerSelection === "paper") {
         if (computerSelection === "rock") {
             userScore += 1;
+            img.src = "images/rock-anm.gif";
         }
         else if (computerSelection === "paper") {
             userScore += 1;
             CompScore += 1;
+            img.src = "images/paper-anm.gif";
         }
         else {
             CompScore += 1;
+            img.src = "images/scissor-anm.gif";
         }
     }
     if (playerSelection === "scissor") {
         if (computerSelection === "rock") {
             CompScore += 1;
+            img.src = "images/rock-anm.gif";
         }
         else if (computerSelection === "paper") {
             userScore += 1;
+            img.src = "images/paper-anm.gif";
         }
         else {
             userScore += 1;
             CompScore += 1;
+            img.src = "images/scissor-anm.gif";
         }
     }
 
