@@ -13,22 +13,24 @@ function getComputerChoice() {
 
 let userScore = 0;
 let CompScore = 0;
-
 function playRound(playerSelection) {
     
     playerSelection = playerSelection.toLowerCase();
     let computerSelection = getComputerChoice();
     computerSelection = computerSelection.toLowerCase();
-    //console.log(playerSelection,computerSelection)
-
+    console.log(playerSelection,computerSelection)
+    let img = document.getElementById("img-one");
     if (winDiv.innerHTML != "") {
         winDiv.innerHTML = "";
     }
+    img.src = 'images/loading.gif';
     
     if (playerSelection === "rock") {
+        
         if (computerSelection === "rock") {
             userScore += 1;
             CompScore += 1;
+            img.src = "images/rock-anm.gif";
         }
         else if (computerSelection === "paper") {
             CompScore += 1;
@@ -85,6 +87,7 @@ function playRound(playerSelection) {
 
 const playDiv = document.getElementById("player-score");
 const CompDiv = document.getElementById("comp-score");
+const compChoice = document.getElementById("comp-choice");
 const winDiv = document.getElementById("win-element");
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
