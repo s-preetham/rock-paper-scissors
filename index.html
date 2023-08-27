@@ -8,23 +8,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head">
-        ROCK PAPER SCISSOR
-    </div>
-    <button id="rock"></button>
-    <button id="paper"></button>
-    <button id="scissor"></button>
-    <div id="player-score" style="background-color: rgb(153, 153, 197); width: 20px; height:20px;">
-        
-    </div>
-    <div id="comp-score" style="background-color: rgb(70, 209, 128); width: 20px; height:20px;">
-        
-    </div>
-    <div id="win-element" style="background-color: rgb(253, 203, 170); width: 20px; height:20px;">
-        
-    </div>
-    <div id="comp-choice" style="background-color: rgb(20, 17, 15); width: 20px; height:20px;">
-        <img id="img-one" src="images/loading.gif" alt="">
+    <div class="container">
+        <div class="head">
+            ROCK PAPER SCISSORS
+            </div>
+        <div class="main">
+            <div class="choice">
+                <div class="user-choice">
+                    <h4>User Choice:</h4>
+                    <div class="buttons">
+                        <button id="rock"></button>
+                        <button id="paper"></button>
+                        <button id="scissor"></button>
+                    </div>
+                    <div id="uc-out">
+    
+                    </div>
+                </div>
+                <div id="comp-choice">
+                    <h4>Computer choice:</h4>
+                    <img id="img-one" src="images/loading.gif" alt="">
+                    <div id="cc-out">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="score">
+                <div id="score-one">
+                    <h4>Player score:</h4>
+                    <h4>Computer score:</h4>
+                </div>
+                <div id="score-two">
+                    <div id="player-score">
+    
+                    </div>
+                    <div id="comp-score">
+    
+                    </div>
+                </div>
+            </div>
+            <div id="win-element">
+                
+            </div>
+        </div>
+        <footer>
+            <h4>Made with &#128151; by s-preetham</h4>
+        </footer>
     </div>
 </body>
 </html>

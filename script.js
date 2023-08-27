@@ -18,18 +18,20 @@ function playRound(playerSelection) {
     playerSelection = playerSelection.toLowerCase();
     let computerSelection = getComputerChoice();
     computerSelection = computerSelection.toLowerCase();
-    console.log(playerSelection,computerSelection)
+    //console.log(playerSelection,computerSelection)
     let img = document.getElementById("img-one");
+
     if (winDiv.innerHTML != "") {
         winDiv.innerHTML = "";
     }
+
     img.src = 'images/loading.gif';
+    ucOut.innerHTML = playerSelection.toUpperCase();
+    ccOut.innerHTML = computerSelection.toUpperCase();
     
     if (playerSelection === "rock") {
         
         if (computerSelection === "rock") {
-            userScore += 1;
-            CompScore += 1;
             img.src = "images/rock-anm.gif";
         }
         else if (computerSelection === "paper") {
@@ -47,8 +49,6 @@ function playRound(playerSelection) {
             img.src = "images/rock-anm.gif";
         }
         else if (computerSelection === "paper") {
-            userScore += 1;
-            CompScore += 1;
             img.src = "images/paper-anm.gif";
         }
         else {
@@ -66,8 +66,6 @@ function playRound(playerSelection) {
             img.src = "images/paper-anm.gif";
         }
         else {
-            userScore += 1;
-            CompScore += 1;
             img.src = "images/scissor-anm.gif";
         }
     }
@@ -100,6 +98,8 @@ const winDiv = document.getElementById("win-element");
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorBtn = document.getElementById("scissor");
+const ucOut = document.getElementById("uc-out");
+const ccOut = document.getElementById("cc-out");
 
 rVal = rockBtn.id;
 pVal = paperBtn.id;

@@ -1,5 +1,6 @@
-# rock-paper-scissors  
-- <a target="_blank" href="https://icons8.com/icon/tlPbyvbhZ3ZC/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
-- <a target="_blank" href="https://icons8.com/icon/L1E60AluxX1l/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
-- <a target="_blank" href="https://icons8.com/icon/BRkbTwc2eIzk/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
-- <a target="_blank" href="https://icons8.com/icon/wkXOulTsCjiK/loading-circle">Loading</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
+# Rock, paper, scissors game using HTML, CSS and JavaScript
+Live preview:   
+- <a target="_blank" href="https://icons8.com/icon/tlPbyvbhZ3ZC/fist">Rock gif</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
+- <a target="_blank" href="https://icons8.com/icon/L1E60AluxX1l/fist">Paper gif</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
+- <a target="_blank" href="https://icons8.com/icon/BRkbTwc2eIzk/fist">Scissors gif</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
+- <a target="_blank" href="https://icons8.com/icon/wkXOulTsCjiK/loading-circle">Loading gif </a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>  
