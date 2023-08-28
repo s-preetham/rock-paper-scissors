@@ -25,7 +25,7 @@ body {
 .head {
     font-size: 40px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     text-shadow:red 2px 5px;
     font-weight: bolder;
     display: flex;
@@ -53,6 +53,7 @@ body {
     justify-content: space-around;
     gap: 20px;
 }
+
 .user-choice {
     display: flex;
     flex-direction: column;
@@ -91,16 +92,18 @@ h4 {
     background-size: cover;
     border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #999;
     cursor:pointer;
 }
 
 #rock:active {
     background-color: #ffffff;
-    box-shadow: 0 5px #f71f1f;
-    transform: translateY(4px);
-  }
-
+    box-shadow: 0 5px #404142;
+}
+#rock:hover {
+    border: 5px solid red;
+    transform: scale(1.2);
+}
 #paper {
     background-image: url('images/paper-anm.gif');
     width: 100px;
@@ -109,15 +112,17 @@ h4 {
     background-size: cover;
     border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #999;
     cursor:pointer;
 }
 #paper:active {
     background-color: #ffffff;
-    box-shadow: 0 5px #0ff842;
-    transform: translateY(4px);
-  }
-
+    box-shadow: 0 5px #404142;
+}
+#paper:hover {
+    border: 5px solid rgb(30, 223, 30);
+    transform: scale(1.2);
+}
 #scissor {
     background-image: url('images/scissor-anm.gif');
     width: 100px;
@@ -126,14 +131,36 @@ h4 {
     background-size: cover;
     border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #999;
     cursor:pointer;
 }
 #scissor:active {
     background-color: #ffffff;
-    box-shadow: 0 5px #0099ff;
-    transform: translateY(4px);
-  }
+    box-shadow: 0 5px #404142;
+    
+}
+#scissor:hover {
+    border: 5px solid #116ba0;
+    transform: scale(1.2);
+}
+#restart-btn {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+    cursor:pointer;
+}
+#restart-btn:active {
+    background-color: #ffffff;
+    box-shadow: 0 5px #696969;
+}
+#restart-btn:hover {
+    transform: scale(1.2);
+}
 footer {
     font-size: 20px;
     display: flex;

@@ -10,6 +10,7 @@ function getComputerChoice() {
         return "scissor";
     }
 }
+ 
 
 let userScore = 0;
 let CompScore = 0;
@@ -74,6 +75,9 @@ function playRound(playerSelection) {
     CompDiv.innerHTML = CompScore;
 
     if (userScore===5||CompScore===5) {
+        rockBtn.setAttribute("disabled", true);
+        paperBtn.setAttribute("disabled", true);
+        scissorBtn.setAttribute("disabled", true);
         if (userScore===5 && CompScore===5) {
             winDiv.innerHTML = "Draw!"
         }
@@ -87,8 +91,9 @@ function playRound(playerSelection) {
             winDiv.innerHTML = "";
         }
         userScore = 0;
-        CompScore = 0;
+        CompScore = 0;    
     }
+    
 }
 
 const playDiv = document.getElementById("player-score");
@@ -100,6 +105,7 @@ const paperBtn = document.getElementById("paper");
 const scissorBtn = document.getElementById("scissor");
 const ucOut = document.getElementById("uc-out");
 const ccOut = document.getElementById("cc-out");
+const restBtn = document.getElementById("restart-btn");
 
 rVal = rockBtn.id;
 pVal = paperBtn.id;
@@ -108,8 +114,9 @@ sVal = scissorBtn.id;
 rockBtn.addEventListener("click", (event) => playRound(rVal));
 paperBtn.addEventListener("click", (event) => playRound(pVal));
 scissorBtn.addEventListener("click", (event) => playRound(sVal));
-
-
+restBtn.addEventListener("click", function() {
+    window.location.reload();
+});
 
 
 
